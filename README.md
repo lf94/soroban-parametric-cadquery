@@ -3,6 +3,18 @@
 The purpose of this project is to demonstrate how "code CAD" can be intuitive to
 learn.
 
+See `soroban.py` for a self-contained example.
+
+See `src/` files for realistic structuring of a code CAD project.
+
+Splitting up parts into their own files makes them reusable across designs and
+allows for easy modification.
+
+Here are a couple pictures of the soroban:
+
+![1](./images/1624856283.png)
+![2](./images/1624856334.png)
+
 # Usage
 
 Follow the CADQuery installation instructions, and open the soroban.py file.

@@ -6,8 +6,8 @@ frame_with_crush_rib = (
   frame
 )
 
-exporters.export(frame_with_crush_rib, "frame.amf")
-exporters.export(rod, "rod.amf")
-exporters.export(bead, "bead.amf")
+exporters.export(frame_with_crush_rib, "../printable/frame.amf")
+exporters.export(rod, "../printable/rod.amf")
+exporters.export(bead, "../printable/bead.amf")
 
 show_object(frame_with_crush_rib)

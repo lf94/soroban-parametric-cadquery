@@ -1,0 +1,21 @@
+# A parametric Soroban written in CADQuery
+
+The purpose of this project is to demonstrate how "code CAD" can be intuitive to
+learn.
+
+# Usage
+
+Follow the CADQuery installation instructions, and open the soroban.py file.
+
+Adjust the variables at the top of the file to generate new, interesting models.
+
+# License
+
+This project is protected by the PolyForm Noncommercial license. This basically
+means:
+
+* You must include this same license in derivatives.
+* You must NOT use this project and its derivatives for commercial purposes.
+
+License violators will not be tolerated.
+

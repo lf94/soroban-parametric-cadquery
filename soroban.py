@@ -8,7 +8,7 @@ thickness   = 1
 base             = 10           # The base number system it will use
 beads_per_column = base / 2
 beads_above_bar  = 1
-columns          = 3            # Determines the amount of digits
+columns          = 10           # Determines the amount of digits
 
 # Bead measurements
 bead_height = 2

@@ -1,4 +1,4 @@
-# A parametric Soroban written in CADQuery
+# A parametric soroban written in CADQuery
 
 The purpose of this project is to demonstrate how "code CAD" can be intuitive to
 learn.

@@ -15,6 +15,10 @@ Here are a couple pictures of the soroban:
 ![1](./images/1624856283.png)
 ![2](./images/1624856334.png)
 
+How it'd look in a slicer:
+
+![3](./images/1624858298.png)
+
 # Usage
 
 Follow the CADQuery installation instructions, and open the soroban.py file.

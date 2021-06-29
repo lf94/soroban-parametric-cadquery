@@ -1,7 +1,7 @@
 # All measurements are in mm
 
 # General measurements
-thickness   = 1
+thickness   = 7
 
 base             = 10           # The base number system it will use
 beads_per_column = base / 2
@@ -9,21 +9,21 @@ beads_above_bar  = 1
 columns          = 10           # Determines the amount of digits
 
 # Bead measurements
-bead_height = 2
-bead_dmaj   = 2                 # Large diameter of the bead
+bead_height = 8
+bead_dmaj   = 8                 # Large diameter of the bead
 bead_dmin   = bead_dmaj / 1.66  # Small diameter of the bead
 
 column_hole = bead_dmin / 1.66
 
 # Vertical spacing for beads below and above the bar
-bead_vspace_below = 3
-bead_vspace_above = 2
+bead_vspace_below = 8
+bead_vspace_above = 6
 
 # Horizontal spacing for the beads
-bead_hspace = 1
+bead_hspace = 4
 
 # Bar measurements
-bar_height  = 1
+bar_height  = 4
 bar_pos_y   = (
     thickness
   + (bead_height * (beads_per_column - 1))
@@ -49,7 +49,6 @@ soroban_width = (
   + thickness
 )
 
-soroban_depth = 1
+soroban_depth = 7
 
-# Start to model the soroban
-
+print(soroban_width)

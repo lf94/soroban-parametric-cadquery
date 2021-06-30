@@ -27,14 +27,6 @@ with_bar = (
   .extrude(-soroban_width)
 )
 
-column_holes = [
-  (
-    thickness + bead_dmaj / 2 + bead_hspace + (bead_dmaj + bead_hspace) * n,
-    0
-  )
-  for n in range(columns)
-]
-
 with_holes_in_base = (
   with_bar
   .faces(">Y")

@@ -6,7 +6,7 @@ thickness   = 7
 base             = 10           # The base number system it will use
 beads_per_column = base / 2
 beads_above_bar  = 1
-columns          = 10           # Determines the amount of digits
+columns          = 1           # Determines the amount of digits
 
 # Bead measurements
 bead_height = 8
@@ -51,4 +51,11 @@ soroban_width = (
 
 soroban_depth = 7
 
-print(soroban_width)
+# Where the holes will be
+column_holes = [
+  (
+    thickness + bead_dmaj / 2 + bead_hspace + (bead_dmaj + bead_hspace) * n,
+    0
+  )
+  for n in range(columns)
+]

@@ -24,17 +24,34 @@ frame_with_crush_rib = (
   .workplane()
   .pushPoints(column_holes)
   .eachpoint(lambda loc: hole_with_ribs.moved(loc), True)
-  .cutBlind(-soroban_height)
+  .cutBlind(-soroban_height * 2)
 )
 
-# frame_with_fillet = (
-#   frame_with_crush_rib
-#   .faces()
-#   .edges("|Z")
-#   .fillet(3.0)
-# )
+crush_rib_chamfer = 2
 
-frame_final = frame_with_crush_rib
+for shape in frame_with_crush_rib.faces("|Y").vals():
+  center = shape.Center()
+  cyl = (
+    Workplane("XZ")
+    .workplane(offset=crush_rib_chamfer)
+    .circle(column_hole / 2)
+    .workplane(offset=-crush_rib_chamfer)
+    .circle(hole_larger_radius)
+    .loft()
+    .val()
+    .translate(center)
+  )
+  frame_with_crush_rib = frame_with_crush_rib.cut(cyl)
+
+
+frame_with_fillet = (
+  frame_with_crush_rib
+  .faces()
+  .edges("|Z")
+  .fillet(3.0)
+)
+
+frame_final = frame_with_fillet
 
 exporters.export(frame_final, "../printable/frame.amf")
 exporters.export(rod, "../printable/rod.amf")

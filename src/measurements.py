@@ -14,6 +14,7 @@ bead_dmaj   = 8                 # Large diameter of the bead
 bead_dmin   = bead_dmaj / 1.66  # Small diameter of the bead
 
 column_hole = bead_dmin / 1.66
+bead_hole = column_hole + 0.2 * 2
 
 # Vertical spacing for beads below and above the bar
 bead_vspace_below = 8

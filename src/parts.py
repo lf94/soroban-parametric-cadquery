@@ -52,6 +52,6 @@ bead = (
   .loft()
   .faces(">Z") # Cut a hole through it for the rod to go through
   .workplane()
-  .hole(column_hole)
+  .hole(bead_hole)
 )
 
